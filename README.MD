@@ -1,12 +1,12 @@
 # AI Voice Assistant
 
-This is a Python-based AI voice assistant project.
+This is a Python-based AI voice assistant project which is capable of understading any language
 
 ## About the Project
 
-I am building an AI voice assistant that can listen to what the user says, understand the request, and respond naturally using voice.
+I am building an AI voice assistant that can listen to what the user says, understand the request, and respond naturally using voice. 
 
-The main goal of this project is to make the assistant communicate with users in a simple and natural way, similar to how we communicate with people.
+The main goal of this project is to make the assistant communicate with users in a simple and natural way in their own language so that user can communicate easily and efficieny, similar to how we communicate with people.
 
 ## Current Progress
 
@@ -28,7 +28,6 @@ The main goal of this project is to make the assistant communicate with users in
 * Convert AI responses into speech
 * Improve natural conversation
 * Add useful assistant features
-
 ## Technologies Used
 
 * Python
@@ -37,5 +36,6 @@ The main goal of this project is to make the assistant communicate with users in
 * pyttsx3
 * OpenAI API
 * python-dotenv
+
 
 
