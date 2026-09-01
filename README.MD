@@ -36,14 +36,13 @@ The main goal of this project is to make the assistant communicate with users in
 
 ### Next Steps
 
-<<<<<<< HEAD
 * Connect the assistant to an AI model
 * Add and securely configure the API key
 * Generate intelligent AI responses
 * Convert AI responses into speech
 * Improve natural conversation
 * Add useful assistant features
-=======
+
 - Connect Ollama to Python
 - Send user questions to the local AI model
 - Receive AI-generated responses
