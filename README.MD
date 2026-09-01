@@ -51,7 +51,6 @@ The main goal of this project is to make the assistant communicate with users in
 - Improve conversational ability
 - Add useful assistant features
 
->>>>>>> 7c1c10c (connect python to ollama ai)
 ## Technologies Used
 
 - Python
