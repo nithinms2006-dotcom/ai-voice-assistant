@@ -2,4 +2,5 @@ speechrecognition
 pyttsx3
 pyaudio
 openai
-python-dotenv
+python-dotenv 
+ollama
