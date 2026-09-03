@@ -1,65 +1,89 @@
 # AI Voice Assistant
 
-This is a Python-based AI voice assistant project which is capable of understading any language
+This is a Python-based AI voice assistant project designed to understand user speech, process requests using artificial intelligence, and respond naturally through voice.
 
 ## About the Project
 
-I am building an AI voice assistant that can listen to what the user says, understand the request, and respond naturally using voice. 
+I am building an AI voice assistant that can listen to what the user says, understand the request, generate an intelligent response, and communicate the answer using voice.
 
-The main goal of this project is to make the assistant communicate with users in a simple and natural way in their own language so that user can communicate easily and efficieny, similar to how we communicate with people.
+The main goal of this project is to create a simple and natural voice assistant that allows users to communicate in their own language, similar to how we interact with assistants such as Siri and Google Assistant.
+
+The assistant is being developed with a focus on real-time voice interaction, AI-powered responses, and future multilingual support.
 
 ## Current Progress
 
 ### Completed
 
-* Created the project structure
-* Set up Python virtual environment
-* Installed required Python libraries
-* Added speech recognition
-* Added text-to-speech
-* Created a continuous listening loop
-* Added basic error handling
+* Project structure created
+* Python virtual environment configured
+* Required Python libraries installed
+* Basic speech recognition implemented
+* Basic text-to-speech implemented
+* Continuous listening loop implemented
+* Basic error handling added
+* GitHub repository created
+* Git version control configured
+* Ollama installed as a local AI backend
+* Llama 3.2 3B model downloaded and configured
+* Python connected to Ollama
+* AI responses successfully generated using Llama 3.2 3B
+* Speech recognition connected with Ollama
+* User voice converted into text and sent to the AI model
+* AI responses converted into speech
+* Continuous voice conversation implemented
+* Voice assistant optimized to provide shorter and faster responses
 
-### Completed
+## Next Steps
 
-- Project structure created
-- Python virtual environment configured
-- Required Python libraries installed
-- Basic speech recognition implemented
-- Basic text-to-speech implemented
-- Continuous listening loop implemented
-- Basic error handling added
-- GitHub repository created
-- Git version control configured
-- Ollama installed as a local AI backend
-- Llama 3.2 3B model downloaded and configured
-
-### Next Steps
-
-* Connect the assistant to an AI model
-* Add and securely configure the API key
-* Generate intelligent AI responses
-* Convert AI responses into speech
+* Improve conversation speed and responsiveness
+* Improve speech recognition accuracy
+* Improve voice response quality
+* Add multilingual speech recognition
+* Make the assistant respond in the same language as the user
 * Improve natural conversation
-* Add useful assistant features
-
-- Connect Ollama to Python
-- Send user questions to the local AI model
-- Receive AI-generated responses
-- Connect AI responses to text-to-speech
-- Improve conversational ability
-- Add useful assistant features
+* Add voice commands and useful assistant features
+* Add more advanced AI capabilities
+* Improve interruption and stop-speaking functionality
+* Add additional AI tools and integrations
 
 ## Technologies Used
 
-- Python
-- SpeechRecognition
-- PyAudio
-- pyttsx3
-- ollama
-- llama 3.2:3b
-- python-dotenv
-- git and github
+* Python
+* SpeechRecognition
+* PyAudio
+* pyttsx3
+* Ollama
+* Llama 3.2 3B
+* python-dotenv
+* Git
+* GitHub
 
+## Project Architecture
 
+```text
+User speaks
+     ↓
+Microphone
+     ↓
+Speech Recognition
+     ↓
+Text temporarily stored in memory
+     ↓
+Ollama + Llama 3.2 3B
+     ↓
+AI-generated response
+     ↓
+Text-to-Speech
+     ↓
+Voice response
+```
 
+## Privacy
+
+The recognized speech is processed temporarily in memory and is not intentionally saved as `.txt` files by the application.
+
+The current speech recognition implementation uses Google's speech recognition service through the SpeechRecognition library, while the AI response generation is handled locally using Ollama.
+
+## Future Goal
+
+The long-term goal of this project is to develop a powerful multilingual AI voice assistant that can understand natural speech, communicate in different languages, perform useful tasks, and provide a smooth real-time conversational experience.
