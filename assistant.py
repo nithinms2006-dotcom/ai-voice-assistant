@@ -2,15 +2,13 @@ import speech_recognition as sr
 import ollama
 import winsound
 import pyttsx3
-import threading
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
-stop_speaking = threading.Event()
 
 def speak(text):
     engine.say(text)
-    engine.runAndWait() 
+    engine.runAndWait()
 
 with sr.Microphone() as source:
     print("Calibrating microphone")
@@ -65,6 +63,4 @@ with sr.Microphone() as source:
         print(response["message"]["content"])
         ai_text = response["message"]["content"]
 
-        speech_thread = threading.Thread(target=speak, args=(ai_text,))
-        speech_thread.start()
-        
+        speak(ai_text)
