@@ -8,7 +8,7 @@ I am building an AI voice assistant that can listen to what the user says, under
 
 The main goal of this project is to create a simple and natural voice assistant that allows users to communicate in their own language, similar to how we interact with assistants such as Siri and Google Assistant.
 
-The assistant is being developed with a focus on real-time voice interaction, AI-powered responses, and future multilingual support.
+The assistant is being developed with a focus on real-time voice interaction, AI-powered responses, conversation context, and future multilingual support.
 
 ## Current Progress
 
@@ -32,6 +32,9 @@ The assistant is being developed with a focus on real-time voice interaction, AI
 * AI responses converted into speech
 * Continuous voice conversation implemented
 * Voice assistant optimized to provide shorter and faster responses
+* Conversation memory implemented
+* Follow-up questions supported using previous conversation context
+* Listening time increased to allow longer voice commands
 
 ## Next Steps
 
@@ -69,14 +72,36 @@ Speech Recognition
      ↓
 Text temporarily stored in memory
      ↓
+Conversation History
+     ↓
 Ollama + Llama 3.2 3B
      ↓
 AI-generated response
+     ↓
+Conversation History Updated
      ↓
 Text-to-Speech
      ↓
 Voice response
 ```
+
+## Conversation Memory
+
+The assistant maintains the current conversation context in memory.
+
+This allows follow-up questions to use information from previous questions.
+
+For example:
+
+```text
+User: Who is Virat Kohli?
+Assistant: Virat Kohli is an Indian cricketer...
+
+User: How old is he?
+Assistant: ...
+```
+
+The previous conversation is provided to the AI model so that follow-up questions can be understood in context.
 
 ## Privacy
 
@@ -86,4 +111,4 @@ The current speech recognition implementation uses Google's speech recognition s
 
 ## Future Goal
 
-The long-term goal of this project is to develop a powerful multilingual AI voice assistant that can understand natural speech, communicate in different languages, perform useful tasks, and provide a smooth real-time conversational experience.
+The long-term goal of this project is to develop a powerful multilingual AI voice assistant that can understand natural speech, maintain natural conversations, communicate in different languages, perform useful tasks, and provide a smooth real-time conversational experience.
