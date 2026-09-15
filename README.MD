@@ -1,114 +1,123 @@
 # AI Voice Assistant
 
-This is a Python-based AI voice assistant project designed to understand user speech, process requests using artificial intelligence, and respond naturally through voice.
+A Python-based voice assistant that listens to spoken questions, sends them to a local Ollama language model, and responds using voice output.
 
-## About the Project
+## Features
 
-I am building an AI voice assistant that can listen to what the user says, understand the request, generate an intelligent response, and communicate the answer using voice.
-
-The main goal of this project is to create a simple and natural voice assistant that allows users to communicate in their own language, similar to how we interact with assistants such as Siri and Google Assistant.
-
-The assistant is being developed with a focus on real-time voice interaction, AI-powered responses, conversation context, and future multilingual support.
-
-## Current Progress
-
-### Completed
-
-* Project structure created
-* Python virtual environment configured
-* Required Python libraries installed
-* Basic speech recognition implemented
-* Basic text-to-speech implemented
-* Continuous listening loop implemented
-* Basic error handling added
-* GitHub repository created
-* Git version control configured
-* Ollama installed as a local AI backend
-* Llama 3.2 3B model downloaded and configured
-* Python connected to Ollama
-* AI responses successfully generated using Llama 3.2 3B
-* Speech recognition connected with Ollama
-* User voice converted into text and sent to the AI model
-* AI responses converted into speech
-* Continuous voice conversation implemented
-* Voice assistant optimized to provide shorter and faster responses
-* Conversation memory implemented
-* Follow-up questions supported using previous conversation context
-* Listening time increased to allow longer voice commands
-
-## Next Steps
-
-* Improve conversation speed and responsiveness
-* Improve speech recognition accuracy
-* Improve voice response quality
-* Add multilingual speech recognition
-* Make the assistant respond in the same language as the user
-* Improve natural conversation
-* Add voice commands and useful assistant features
-* Add more advanced AI capabilities
-* Improve interruption and stop-speaking functionality
-* Add additional AI tools and integrations
+- Voice-based user interaction
+- Speech recognition using Google Speech Recognition
+- Local AI responses using Ollama
+- Text-to-speech output using pyttsx3
+- Supports multiple questions in one session
+- Understands commands such as `stop`, `exit`, `quit`, and `goodbye`
+- Conversation memory during the current session
+- Audible beep before listening
+- Adjustable listening duration
 
 ## Technologies Used
 
-* Python
-* SpeechRecognition
-* PyAudio
-* pyttsx3
-* Ollama
-* Llama 3.2 3B
-* python-dotenv
-* Git
-* GitHub
+- Python
+- SpeechRecognition
+- Ollama
+- Llama 3.2 3B
+- pyttsx3
+- PyAudio
+- winsound
 
-## Project Architecture
+## Requirements
 
-```text
-User speaks
-     ↓
-Microphone
-     ↓
-Speech Recognition
-     ↓
-Text temporarily stored in memory
-     ↓
-Conversation History
-     ↓
-Ollama + Llama 3.2 3B
-     ↓
-AI-generated response
-     ↓
-Conversation History Updated
-     ↓
-Text-to-Speech
-     ↓
-Voice response
+- Python 3.11 or later
+- Windows operating system
+- Working microphone
+- Working speakers
+- Ollama installed
+- Llama 3.2 model downloaded
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/nithinms2006-dotcom/ai-voice-assistant.git
 ```
 
-## Conversation Memory
+Open the project folder:
 
-The assistant maintains the current conversation context in memory.
-
-This allows follow-up questions to use information from previous questions.
-
-For example:
-
-```text
-User: Who is Virat Kohli?
-Assistant: Virat Kohli is an Indian cricketer...
-
-User: How old is he?
-Assistant: ...
+```bash
+cd ai-voice-assistant
 ```
 
-The previous conversation is provided to the AI model so that follow-up questions can be understood in context.
+Create a virtual environment:
 
-## Privacy
+```bash
+python -m venv venv
+```
 
-The recognized speech is processed temporarily in memory and is not intentionally saved as `.txt` files by the application.
+Activate the virtual environment on Windows:
 
-The current speech recognition implementation uses Google's speech recognition service through the SpeechRecognition library, while the AI response generation is handled locally using Ollama.
+```bash
+venv\Scripts\activate
+```
 
-## Future Goal
+Install the required packages:
 
-The long-term goal of this project is to develop a powerful multilingual AI voice assistant that can understand natural speech, maintain natural conversations, communicate in different languages, perform useful tasks, and provide a smooth real-time conversational experience.
+```bash
+pip install SpeechRecognition ollama pyttsx3 PyAudio keyboard
+```
+
+## Ollama Setup
+
+Install Ollama and download the model:
+
+```bash
+ollama pull llama3.2:3b
+```
+
+Make sure Ollama is running before starting the assistant.
+
+## Run the Assistant
+
+```bash
+python assistant.py
+```
+
+The assistant will beep and begin listening for your question.
+
+## Voice Commands
+
+You can say:
+
+- `stop`
+- `exit`
+- `quit`
+- `goodbye`
+
+The assistant will end the session after completing its response.
+
+## Project Structure
+
+```text
+ai-voice-assistant/
+│
+├── assistant.py
+├── README.md
+└── venv/
+```
+
+## Future Improvements
+
+- Wake-word activation
+- Better multilingual support
+- More natural voices
+- Offline speech recognition
+- Application and system control
+- Web search integration
+- GUI interface
+
+## Author
+
+Nithin
+
+## License
+
+This project is for educational and personal use.
