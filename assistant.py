@@ -60,7 +60,7 @@ while True:
         )
 
         ai_text = response["message"]["content"]
-        print("NEXUS AI:", ai_text)
+        print("Assistant:", ai_text)
 
         messages.append({
             "role": "assistant",
